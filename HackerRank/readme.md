@@ -4,7 +4,7 @@
 - [Find the Runner-Up Score](https://github.com/heejung-gjt/Python-Algorithm/blob/master/HackerRank/Find%20the%20Runner-Up%20Score%20!.ipynb)
 <br>
 
--[Find the Torsional Angle](https://github.com/heejung-gjt/Python-Algorithm/blob/master/HackerRank/Find%20the%20Torsional%20Angle.ipynb)
+- [Find the Torsional Angle](https://github.com/heejung-gjt/Python-Algorithm/blob/master/HackerRank/Find%20the%20Torsional%20Angle.ipynb)
 <br>
 
 - [Lists](https://github.com/heejung-gjt/Python-Algorithm/blob/master/HackerRank/Lists.ipynb)

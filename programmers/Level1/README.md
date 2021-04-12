@@ -2,6 +2,7 @@
 ### Level1
 
 
+
 #### 문제1번 
 ```
 문자열 s의 길이가 4혹은 6이고, 
@@ -61,3 +62,7 @@ def solution(a,b):
 #### ```질문```
 
 - answer의 기본값이 ```answer=1234567890```으로 되어 있었지만 answer = 0으로 고친 후 문제를 풀었다. 기본값을 바꾸어도 괜찮은가?
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/64240637/114377191-57440100-9bc1-11eb-8555-9343a09fefc4.png" width=400px height=200>

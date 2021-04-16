@@ -25,6 +25,18 @@ def solution(s):
   return answer
 ```
 
+#### ```리뷰 후 코드```
+삼항 연산자를 쓰기에는 조건문이 너무 길어지므로 일반 if문을 쓰는 것이 ```가독성```면에서 좋다
+```py
+#1번
+def solution(s):
+  if len(s) == 4 or len(s) == 6 and s.isdigit():
+    answer = True
+  else:
+    answer = False
+  return answer
+```
+
 #### ```주의```
 
 - or과 and문을 사용시 or의 조건문을 ```()``` 으로 묶어주어야 모든 테스트케이스를 통과할 수 있다. 항상 or의 조건문이 먼저 평가되어야 한다.
@@ -43,19 +55,34 @@ a와 b의 내적을 return하도록 solution함수를 완성해라
 - 인덱스 값 i가 len(a)또는 len(b)와 같아지면 반복문을 종료한다                
 
 
-
 #### ```코드```
 ```py
 def solution(a,b):
   answer = 0
   i = 0
-
   while True:
     if i == len(a):
       break
     answer += a[i] * b[i]
     i += 1
-  
+  return answer
+```
+#### ```리뷰 후 코드```
+while문보다는 for문을 사용하는 것이 가독성면에서 더 좋다
+```py
+def solution(a,b):
+  answer = 0
+  for i in range(len(a)):
+      answer += a[i] * b[i]
+  return answer
+```
+zip을 이용해서 문제를 해결이 가능하다
+```py
+#2번
+def solution(a,b):
+  answer = 0
+  for x, y in zip(a,b):
+    answer += x * y
   return answer
 ```
 

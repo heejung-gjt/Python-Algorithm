@@ -28,12 +28,14 @@ class LinkedList:
     return curr
 
   def traverse(self):
-    curr = self.head
-    answer = []
-    while curr != None:
-      answer.append(curr.data)
-      curr = curr.next
-    return answer
+      answer = []
+      link = self.head
+      if link is None:
+          return answer
+      while link:
+          answer.append(link.data)
+          link = link.next
+      return answer
 
 def solution(x):
   return 0

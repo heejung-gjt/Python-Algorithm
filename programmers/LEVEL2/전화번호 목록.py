@@ -1,5 +1,5 @@
 """
-해시 관련 문제
+해시 활용 문제
 """
 def solution(phone_book):
     phone_book.sort() # 정렬

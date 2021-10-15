@@ -1,0 +1,21 @@
+ -- yogurt를 가지고 있는 id중에 milk를 가지고 있는 사람이 있는지 확인
+
+
+SELECT CART_ID -- SELECT DISTINCE CART_ID로도 문제 없음 왜 ?
+FROM CART_PRODUCTS
+WHERE NAME = 'Yogurt' AND CART_ID IN (
+    SELECT CART_ID
+    FROM CART_PRODUCTS
+    WHERE NAME = 'Milk'
+)
+ORDER BY CART_ID;
+
+
+
+-- GROUP BY 이용한 문제
+SELECT CART_ID
+FROM CART_PRODUCTS cp
+WHERE NAME IN ('Yogurt', 'Milk')
+GROUP BY CART_ID 
+HAVING COUNT(distinct(NAME)) > 1
+ORDER BY CART_ID
